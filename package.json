@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack serve --config webpack.config.dev.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.53.0",
     "eslint-plugin-node": "^11.1.0",
     "html-webpack-plugin": "^5.5.3",
